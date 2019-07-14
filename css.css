@@ -35,23 +35,6 @@ header {
   z-index: 1;
 }
 
-nav {
-  width: 100%;
-  display: flex;
-}
-
-.nav {
-}
-
-.nav__ul {
-  list-style-type: none;
-  padding: 0.5em;
-}
-
-.nav__li {
-  padding: 0.1em;
-}
-
 article {
   width: 100%;
   display: flex;
@@ -66,27 +49,11 @@ section {
   align-items: center;
 }
 
-.sportsplayer {
-  background-color: #1E8449;
-}
-
-.everydayfood {
-  background-color: #D4AC0D;
-}
 
 .biodynamicfarming {
-  background-color: #FAE5D3;
+  background-color: #FFFFF;
 }
 
-aside {
-  width: 100%;
-  display: flex;
-}
-
-footer {
-  width: 100%;
-  display: flex;
-}
 
 /* special elements */
 
@@ -123,6 +90,54 @@ footer {
   }
 }
 
+@keyframes toggle-one-third {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100 {
+    opacity: 1;
+  }
+}
+
+@keyframes toggle-two-third {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100 {
+    opacity: 1;
+  }
+}
+
+@keyframes toggle-three-third {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-15px, -5px);
+  }
+  10% {
+    transform: translate(0px, 0px);
+  }
+}
+
 /* animated components */
 #phone-screen {
   animation-name: flash;
@@ -130,3 +145,30 @@ footer {
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
+
+#wifi-bar-1 {
+  animation-name: toggle-one-third;
+  animation-timing-function: step-end;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#wifi-bar-2 {
+  animation-name: toggle-two-third;
+  animation-timing-function: step-end;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#wifi-bar-3 {
+  animation-name: toggle-three-third;
+  animation-timing-function: step-end;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#clouds, #clouds-shadow-1, #clouds-shadow-2 {
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: both;
