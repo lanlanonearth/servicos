@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* svg */
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.global-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.link-icon {
+  width: 15vmin;
+  height: auto;
+  color: #ffffff;
+}
+
+/* semantic HTML for legacy browsers */
+header {
+  display: flex;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+}
+
+.nav {
+}
+
+.nav__ul {
+  list-style-type: none;
+  padding: 0.5em;
+}
+
+.nav__li {
+  padding: 0.1em;
+}
+
+article {
+  width: 100%;
+  display: flex;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sportsplayer {
+  background-color: #1E8449;
+}
+
+.everydayfood {
+  background-color: #D4AC0D;
+}
+
+.biodynamicfarming {
+  background-color: #FAE5D3;
+}
+
+aside {
+  width: 100%;
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+}
+
+/* special elements */
+
+.card-container {
+  width: 60vmin;
+  height: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-container2 {
+  width: 90vmin;
+  height: 90vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-item-icon {
+  padding: 15vmin;
+}
+
+/* Animation */
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* animated components */
+#phone-screen {
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
